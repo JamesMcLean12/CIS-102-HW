@@ -4,4 +4,21 @@
 <head>
 </head>
 
+<script>
+    
+    function theFInalCountdown() {
+        var currentCount = 10;
+        var timer = setInterval(function () {
+            doccument.getElementById("theFinalCountdown").innerHTML = currentCount;
+            currentCount--;
+            if (currentCount < -1) {
+                clearInterval(timer);
+                document.getElementbyId("theFinalCountdown").innerHTML = "Launch is a Go!";
+                alert("launch is a go!")
+
+            }
+        }, 1000);
+
+</script>
+
 </html>
